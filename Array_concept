@@ -1,0 +1,35 @@
+public class ArrayOperations {
+    public static void main(String[] args) {
+        // Create an array of 5 integer values
+        int[] array = {10, 5, 15, 7, 20};
+
+        // Calculate and print the sum of all values in the array
+        int sum = 0;
+        for (int value : array) {
+            sum += value;
+        }
+        System.out.println("Sum: " + sum);
+
+        // Calculate and print the average of values in the array
+        double average = (double) sum / array.length;
+        System.out.println("Average: " + average);
+
+        // Find and print the maximum value in the array
+        int max = array[0];
+        for (int value : array) {
+            if (value > max) {
+                max = value;
+            }
+        }
+        System.out.println("Maximum: " + max);
+
+        // Find and print the minimum value in the array
+        int min = array[0];
+        for (int value : array) {
+            if (value < min) {
+                min = value;
+            }
+        }
+        System.out.println("Minimum: " + min);
+    }
+}
